@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mint To Be</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
+<style>
+.carousel img{
+    height: 500px;
+    object-fit: cover;
+}
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-danger px-3">
+
+  <a class="navbar-brand fw-bold text-white" href="index.html">Mint To Be</a>
+
+  <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    
+    <ul class="navbar-nav ms-auto align-items-center">
+
+      <li class="nav-item"><a class="nav-link text-white" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="about.html">About</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="contact.html">Contact</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="order.html">Order</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="variety.html">Variety</a></li>
+      <li class="nav-item"><a class="nav-link text-white" href="special-offer.html">Offers</a></li>
+
+      <li class="nav-item ms-3">
+        <div class="d-flex">
+          <input type="text" id="searchBox" class="form-control form-control-sm me-2" placeholder="Search...">
+          <button class="btn btn-light btn-sm">🔍</button>
+        </div>
+      </li>
+
+      <li class="nav-item ms-3">
+        <button class="btn btn-light position-relative" onclick="toggleCart()">
+          🛒
+          <span id="cartCount" class="position-absolute top-0 start-100 translate-middle badge bg-danger">0</span>
+        </button>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+<div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="background1.jpg" class="d-block w-100">
+      <div class="carousel-caption">
+        <h2>Delicious Ice Cream</h2>
+        <p>Fresh and creamy every day</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="background2.jpg" class="d-block w-100">
+      <div class="carousel-caption">
+        <h2>Cool Summer Treat</h2>
+        <p>Beat the heat with sweetness</p>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="background3.jpg" class="d-block w-100">
+      <div class="carousel-caption">
+        <h2>Premium Flavours</h2>
+        <p>Try our special varieties</p>
+      </div>
+    </div>
+
+  </div>
+
+  <button class="carousel-control-prev" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+
+  <button class="carousel-control-next" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+
+</div>
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Our Categories</h2>
+
+    <div class="row text-center">
+
+        <div class="col-md-4">
+            <div class="card shadow p-3">
+                <img src="cone.jpg" class="card-img-top">
+                <h5 class="mt-2">Cone</h5>
+                <a href="cone.html" class="btn btn-danger">View</a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow p-3">
+                <img src="cup.jpg" class="card-img-top">
+                <h5 class="mt-2">Cup</h5>
+                <a href="cup.html" class="btn btn-danger">View</a>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card shadow p-3">
+                <img src="popsicle.jpg" class="card-img-top">
+                <h5 class="mt-2">Popsicle</h5>
+                <a href="popsicle.html" class="btn btn-danger">View</a>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<footer class="bg-dark text-white text-center p-3 mt-5">
+    <p>© 2026 Mint To Be</p>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
